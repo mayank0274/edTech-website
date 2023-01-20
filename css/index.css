@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Nav bar section*/
+.head {
+  width: 100vw;
+  height: 7rem;
+  background: #fcfafc;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.navbar,.listSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: centre;
+}
+
+.ham-icon {
+  display: none;
+}
+.head .logoImg {
+  width: 25%;
+  padding: 1rem;
+}
+.navList {
+  display: flex;
+  gap: 2.6rem;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0.6s linear;
+  padding: .7rem;
+}
+.nav-link:hover {
+  color: #4389a2;
+}
+.navListName {
+  text-transform: uppercase;
+  list-style-type: none;
+}
+.btnnav{
+  display: none;
+}
+
+/* first-info section */
+.first-info {
+  display: flex;
+  height: 28rem;
+
+  background: linear-gradient(to right,#fcfafc,#faf5fa);
+}
+.first-info .left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-size: 4rem;
+}
+.info-para {
+  font-size: 1.5rem;
+}
+
+.first-info .right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.infoImg {
+  height: 100%;
+}
+.btn {
+  background: linear-gradient(to right,#a044ff,#fc00ff);
+  width: 36%;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size:1.2rem;
+  color: white;
+  margin: 1.9rem auto;
+  outline: none;
+  border: none;
+  transition: all 0.4s linear;
+}
+.btn:hover {
+  background: #fff;
+  color: black;
+  border:1px solid black;
+}
+
+
+
+/* facilities section */
+
+.btnlogin{
+  display: block;
+  color: #ffffff;
+  background: #a044ff;
+  opacity: .8;
+  font-weight: bold;
+}
+.facilities {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+}
+.facilities_heading {
+  margin: 1.5rem 0;
+}
+.facilities .left {
+  margin-top: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.facilities-img {
+  width: 80%;
+}
+.facilities .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.facilities_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facilities_list ul li span {
+  padding: 1rem;
+}
+.facilities_list ul li {
+  padding: 1em;
+  list-style-type: none;
+  font-size: 2rem;
+}
+.study {
+  align-self: center;
+  height: 4rem;
+  text-align: center;
+  padding: 10px;
+  width: 55%;
+  border: 1px solid #fff;
+  color: white;
+  background-color: #a044ff;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.study:hover{
+  background-color: #fff;
+  color: black;
+  border:1px solid black;
+}
+.fee {
+  font-size: 2rem;
+  padding: 4px;
+}
+.btn_fee {
+  align-self: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2rem;
+  background: transparent;
+  height: 4rem;
+  text-align: center;
+  width: 45%;
+}
+.btn_fee:hover {
+  width: 40%;
+  background:#a044ff;
+  color: white;
+  border: 1px solid white;
+}
+
+/* courses section */
+.box {
+  border-radius: 1.7rem;
+  width: 30%;
+  height: 28rem;
+  margin: 1rem;
+  box-shadow: .2rem .2rem .5rem .6rem #b8b7b6, -.2rem -.2rem 1rem .3rem #b8b7b6;
+  padding: 1.6rem;
+}
+.courses {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.courses_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courses img {
+  border: 1px solid white;
+  border-radius: 5rem;
+  width: 19%;
+  margin: 1rem .9rem;
+}
+.heading {
+  margin: 1.3rem 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.service_heading {
+  align-self: flex-start;
+  margin: 3rem;
+}
+
+/* footer */
+footer {
+  margin-top:3rem;
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+
+.row {
+  padding: 1em 1em;
+}
+
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul  li:not(:first-child) {
+  margin-top: 0.8em;
+}
+
+footer ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #2a8ded;
+}
+
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+
+footer input,footer button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+footer button {
+  background-color: #c7940a;
+  color: #ffffff;
+}
+
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+
+
+.copyright p {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+
+/*swiper*/
+
+.swiper {
+  width: 70%;
+  height: 25rem;
+  margin: 2rem 1rem;
+  box-shadow: .2rem .2rem .2rem #b8b7b6, -.2rem -.2rem .2rem #b8b7b6;
+  border-radius: 1rem;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 14px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.updates_heading {
+  margin: 3rem;
+}
+
+
+/*contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 90%;
+}
+.contact_heading {
+  align-self: flex-start;
+  margin: 3rem;
+}
+.name,.email {
+  width: 40%;
+  margin: 1.7rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  outline: none;
+  border-radius: .6rem;
+}
+.subject,.message {
+  width: 85%;
+  margin: 1.7rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  border-radius: .6rem;
+  outline: none;
+}
+.message {
+  height: 20rem;
+}
+.form_btn {
+  display: block;
+  width: 35%;
+  margin: auto;
+  font-size: 4rem;
+  height: 5rem;
+}
+
+/* stats*/
+.stats {
+  margin-top: 3rem;
+  background: linear-gradient(to right,#a044ff,#fc00ff);
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.upper_row,.lower_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.stat_left,.stat_right {
+  margin-right: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 50%;
+
+}
+.stat_left span,.stats span {
+  font-size: 1.5rem;
+}
+.stats_heading {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+.stats_heading span {
+  font-size: 1.5rem;
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width:850px) {
+  
+  .btnnav{
+    display: block;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+  .first-info {
+    flex-direction: column;
+    height: 25rem;
+  }
+  .head .logoImg {
+    width: 40%;
+  }
+  .first-info .left {
+    margin-top: 5rem;
+    width: 100vw;
+    text-align: center;
+  }
+  .first-info .right {
+    display: none;
+  }
+  .facilities {
+    flex-direction: column;
+    height: 70rem;
+    justify-content: center;
+  }
+
+  .facilities .left {
+    width: 100vw;
+    margin: 0;
+  }
+  .facilities .right {
+    width: 100vw;
+    justify-content: center;
+  }
+  .facilities_heading,.facilities .info-para {
+    text-align: center;
+  }
+  .swiper{
+    width: 90%;
+  }
+.btnlogin{
+  display: none;
+}
+  .courses,.courses_cards {
+    flex-direction: column;
+  }
+  .courses .box {
+    width: 70vw;
+    margin-top: 2rem;
+    height: 30rem;
+  }
+ 
+  .name_email {
+    display: flex;
+    flex-direction: column;
+  }
+  .name,.email ,.message,.subject,.form_btn {
+    width: 85%;
+    font-size: 1.5rem;
+  }
+  .message {
+    height: 10rem;
+  }
+  .form_btn {
+    align-self: center;
+    width: 35%;
+    height: 3.5rem;
+    font-size: 2rem;
+
+  }
+
+  .facilities_list ul li {
+    font-size: 1.5rem;
+  }
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+  /* hamburger */
+  .navbar {
+    flex-direction: row-reverse;
+  }
+  .ham-icon {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  .bar-icon {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: .5rem;
+    background: none;
+
+  }
+  .ham-close-icon {
+    border: 1px solid black;
+    padding: .5rem;
+    opacity: 0;
+    border-radius: 3px;
+  }
+  .navList {
+    display: flex;
+    gap: 3.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .listSection {
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(to right,#fcfafc,#faf5fa);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5 linear;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* enabling toggle */
+  .active .listSection {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    z-index: -1;
+  }
+  .active .bar-icon {
+    display: none;
+  }
+  .active .ham-close-icon {
+    opacity: 1;
+  }
+
+}
